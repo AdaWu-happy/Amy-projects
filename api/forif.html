@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>for if</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/base.css">
+	<style>
+		.head-con a img{
+			width:1.6rem;
+			margin-top: 0.08rem;
+		}
+		.form-search{
+			width:8.88rem;
+			height:97%;
+		}
+		.search-icon{
+			width:1.2rem;
+			height: 100%;
+		}
+		.search-icon img{
+			width: 0.32rem;
+		}
+	</style>
+	<script src="https://cdn.bootcss.com/jquery/1.12.2/jquery.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/jquery.ztree.all.js"></script>
+</head>
+<body>
+	<div class="head">
+		<div class="head-con clearfix">
+			<a href="forif.html" class="disib fl">
+				<img src="img/head/logo1.png" alt="">
+			</a>
+			<div class="head-right">
+				<ul class="clearfix">
+					<li><a href="">API Doc</a></li>
+					<li><a href="">API Guide</a></li>
+					<li><a href="SDK-Samples.html">SDK</a></li>
+					<li><a href="">Get Started</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="main-box">
+			<div class="main-logo">
+				<img src="img/main/logo1.png" alt="">
+				<div style="margin-bottom:0.8rem;"></div>
+				<div class="main-search">
+					<input type="text" placeholder="Searn API your want...." class="form-search fl">
+					<div class="search-icon fl">
+						<img src="img/main/search.png" alt="">
+					</div>
+				</div>
+				<div class="main-botton">
+					<div class="main-botton-box">
+						<input type="radio"  name="sort" style="display:none;" checked id="chn">
+						<label for="chn">API chn</label>
+						<input type="radio" name="sort" id="google" style="display:none;">
+						<label for="google">Google</label>
+					</div>
+				</div>
+			</div>
+			<div class="main-icon">
+				<div class="main-icon-box">
+					<ul class="clearfix">
+						<li>
+							<a href="http://thebuildingcoder.typepad.com/" target="_blank">
+								<div class="mib mib-3"></div>
+								<div class="mib-p">
+									<p>API Wiki</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="http://blog.csdn.net/JoeXiongjin" target="_blank">
+								<div class="mib mib-2"></div>
+								<div class="mib-p">
+									<p>Jeremy</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://forums.autodesk.com/t5/revit-api-forum/bd-p/160" target="_blank">
+								<div class="mib mib-1"></div>
+								<div class="mib-p">
+									<p>API Forum</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-footer">
+		<div class="mf-box">
+			<div class="mf-div1">
+				<ul class="mf-ul clearfix">
+					<li>
+						<a href="">法律声明</a>
+					</li>
+					<li>
+						<a href="">网站地图</a>
+					</li>
+					<li>
+						<a href="">留言反馈</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="mf-ul clearfix">
+					<li>
+						<a href="">京ICP 10031430号 京公安网备1321312141</a>
+					</li>
+					<li>
+						<a href="">出版物经营许可证编号新出发京零字第海12314号</a>
+					</li>
+					<li>
+						<a href="">Glodon 1990-2013 XXX有限公司</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+			var aBtn=document.querySelectorAll(".main-botton-box input");
+			var aIpt=document.querySelector(".main-search input");
+
+			aBtn[0].onclick=function(){
+				aIpt.classList.remove("google");
+			}
+
+			aBtn[1].onclick=function(){
+				aIpt.classList.add("google");
+			}
+
+	</script>
+</body>
+</html>
