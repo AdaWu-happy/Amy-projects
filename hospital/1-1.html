@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>专病登记-病例编辑-编辑病例条目</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery.1.11.js"></script>
+	<script src="js/index.js"></script>
+	<style>
+		.footer{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+<div id="head" class="clearfix">
+	<div class="head-fl fl">
+		<a href="" class="fl head-logo cp">
+			<img src="img/head/logo.png" alt="">
+		</a>
+		<span class="fl">
+				多学科远程会诊平台
+			</span>
+	</div>
+	<div class="head-fr fr clearfix">
+		<div class="head-user-box fr">
+			<img src="img/head/user.png" alt="">
+			<span>李冠森</span>
+			<img src="img/head/arr-b.png" alt="">
+			<div class="head-user-hide-box bg-white">
+				<div class="huhb-head clearfix">
+					<div class="avatar-box fl">
+						<img src="img/head/5.png" alt="">
+					</div>
+					<div class="fl">
+						<p>李冠森</p>
+						<p>13912345678</p>
+					</div>
+				</div>
+				<div class="huhb-body">
+					<ul>
+						<li>
+							<a href="1-4.html" style="display: block;">
+								<img src="img/head/1.png" alt="">
+								基本资料
+							</a>
+						</li>
+						<li>
+							<a href="1-4.html" style="display: block;">
+								<img src="img/head/2.png" alt="">
+								修改密码
+							</a>
+						</li>
+						<li>
+							<img src="img/head/3.png" alt="">
+							申请权限
+						</li>
+						<li>
+							<img src="img/head/4.png" alt="">
+							退出
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="head-news fr">
+			<img src="img/head/news.png" alt="">
+			<span class="news-num">123</span>
+		</div>
+		<div class="head-set fr">
+			<img src="img/head/set.png" alt="">
+		</div>
+	</div>
+</div>
+	<div id="content" class="clearfix">
+		<div class="content-main-details">
+			<div class="content-main-details-head bg-white">
+				<img src="img/content/home.png" alt="">
+				位置：专病登记>>病例编辑>>编辑病例条目
+			</div>
+			<div class="content-main-editEntry-body bg-white">
+				<div style="height:.4rem;"></div>
+				<div class="editEntry-box bg-white">
+					<div class="eb-head">
+						<span>实验室检查-M蛋白检查</span>
+					</div>
+					<div class="eb-body">
+						<p class="eb-tit">注意：excel导入时， 第一行是 name和 value SheetName默认是Sheet1。</p>
+						<div class="eb-table-info">
+							<form action="">
+								<div class="input-g mt30">
+									<span class="item-title">
+										<span>*</span>尿游离轻链Kappa值
+									</span>
+									<input type="text" class="input-fulid">mg/dL
+								</div>
+								<div class="input-g mt30">
+									<span class="item-title">
+										<span>*</span>尿游离轻链Lammbda值
+									</span>
+									<input type="text" class="input-fulid">mg/dL
+								</div>
+								<div class="input-g mt30">
+									<span class="item-title">
+										<span>*</span>血游离轻链Kappa值
+									</span>
+									<input type="text" class="input-fulid">mg/dL
+								</div>
+								<div class="input-g mt30">
+									<span class="item-title">
+										<span>*</span>血游离轻链Lambda值
+									</span>
+									<input type="text" class="input-fulid">mg/dL
+								</div>
+								<div class="input-g mt30">
+									<span class="item-title">
+										<span>*</span>血免疫固定电泳K λ 类型
+									</span>
+									<input type="text" class="input-fulid">mg/dL
+								</div>
+								<div class="input-g mt30">
+									<span class="item-title">
+										<span>*</span>血免疫固定电泳值
+									</span>
+									<input type="text" class="input-fulid">mg/dL
+								</div>
+								<div class="input-g mt30">
+									<span class="item-title">
+										<span>*</span>血免疫固定电泳免疫类型
+									</span>
+									<input type="text" class="input-fulid">mg/dL
+								</div>
+								<div class="input-g mt30">
+									<span class="item-title">
+										<span>*</span>尿液免疫固定电泳值
+									</span>
+									<input type="text" class="input-fulid">mg/dL
+								</div>
+								<div class="input-g mt30">
+									<span class="item-title">
+										<span>*</span>尿液免疫固定电泳类型
+									</span>
+									<input type="text" class="input-fulid">mg/dL
+								</div>
+								<div class="form-do">
+									<div class="excel-btn">excel导入</div>
+									<div class="blue-btn">保存</div>
+									<div class="gray-btn">取消</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer fl">
+			由 创业软件股份有限公司 提供技术支持  All Rights Reserved 浙ICP备 14009699 号-2
+		</div>
+	</div>
+	<script>
+			$(".examination-results-head").on("click","ul li",function(){
+				$(this).addClass("on").siblings("li").removeClass("on");
+			})
+
+			$(".examination-results-sideMenu").on("click","ul li",function(){
+				$(this).addClass("on").siblings("li").removeClass("on");
+			})
+
+			$(".er-main").on("click",".er-menu-i",function(){
+				$(this).toggleClass("on").parent().next().toggle();
+			})
+	</script>
+</body>
+</html>

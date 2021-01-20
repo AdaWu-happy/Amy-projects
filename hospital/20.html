@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>专病登记-病例详情-治疗方案</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery.1.11.js"></script>
+	<script src="js/index.js"></script>
+	<style>
+		.footer{
+			width: 100%;
+		}
+/*		#ovo-main-box-body table tr td:nth-child(1),#ovo-main-box-body table tr td:nth-child(3){
+			width: 38%;
+			color: #646f7b;
+			background-color: #f9fafb;
+		}
+		#ovo-main-box-body table tr td:nth-child(2),#ovo-main-box-body table tr td:nth-child(4){
+			width: 12%;
+			color: #4a636d;
+			padding-right: .15rem;
+			box-sizing:border-box;
+		}*/
+	</style>
+</head>
+<body>
+<div id="head" class="clearfix">
+	<div class="head-fl fl">
+		<a href="" class="fl head-logo cp">
+			<img src="img/head/logo.png" alt="">
+		</a>
+		<span class="fl">
+				多学科远程会诊平台
+			</span>
+	</div>
+	<div class="head-fr fr clearfix">
+		<div class="head-user-box fr">
+			<img src="img/head/user.png" alt="">
+			<span>李冠森</span>
+			<img src="img/head/arr-b.png" alt="">
+			<div class="head-user-hide-box bg-white">
+				<div class="huhb-head clearfix">
+					<div class="avatar-box fl">
+						<img src="img/head/5.png" alt="">
+					</div>
+					<div class="fl">
+						<p>李冠森</p>
+						<p>13912345678</p>
+					</div>
+				</div>
+				<div class="huhb-body">
+					<ul>
+						<li>
+							<a href="1-4.html" style="display: block;">
+								<img src="img/head/1.png" alt="">
+								基本资料
+							</a>
+						</li>
+						<li>
+							<a href="1-4.html" style="display: block;">
+								<img src="img/head/2.png" alt="">
+								修改密码
+							</a>
+						</li>
+						<li>
+							<img src="img/head/3.png" alt="">
+							申请权限
+						</li>
+						<li>
+							<img src="img/head/4.png" alt="">
+							退出
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="head-news fr">
+			<img src="img/head/news.png" alt="">
+			<span class="news-num">123</span>
+		</div>
+		<div class="head-set fr">
+			<img src="img/head/set.png" alt="">
+		</div>
+	</div>
+</div>
+	<div id="content" class="clearfix">
+		<div class="content-main-details">
+			<div class="content-main-details-head">
+				<img src="img/content/home.png" alt="">
+				位置：专病登记>>病例详情
+			</div>
+			<div class="content-main-details-body">
+				<div class="personal-info-box">
+					<p class="name">张峰</p>
+					<div style="height:.3rem;"></div>
+					<table>
+						<tr>
+							<td>
+								<img src="img/content/id.png" alt="">
+								<span>病例ID号：</span>2387429375924
+							</td>
+							<td>
+								<img src="img/content/sex.png" alt="">
+								<span>性别：</span>男
+							</td>
+							<td>
+								<img src="img/content/nation.png" alt="">
+								<span>民族：</span>汉族
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/content/type.png" alt="">
+								<span>病例分类：</span>原生动物性结肠炎
+							</td>
+							<td>
+								<img src="img/content/birth.png" alt="" style="width:.35rem;">
+								<span>出生日期：</span>1978.09.23
+							</td>
+							<td>
+								<img src="img/content/idNum.png" alt="">
+								<span>份证号：</span>23749138572847237
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div style="height:.3rem;"></div>
+				<div class="examination-results-box">
+					<div class="examination-results-head bg-white">
+						<ul>
+							<a href="11.html">
+								<li>
+									<span>人口学特征</span>
+								</li>
+							</a>
+							<a href="12.html">
+								<li>
+									<span>疾病史</span>
+								</li>
+							</a>
+							<a href="13.html">
+								<li>
+									<span>临床诊断</span>
+								</li>
+							</a>
+							<a href="14.html">
+								<li>
+									<span>实验室检查</span>
+								</li>
+							</a>
+							<a href="15.html">
+								<li>
+									<span>影像学检查</span>
+								</li>
+							</a>
+							<a href="21.html">
+								<li>
+									<span>病理检查</span>
+								</li>
+							</a>
+							<a href="16.html">
+								<li>
+									<span>体格检查</span>
+								</li>
+							</a>
+							<a href="17.html">
+								<li>
+									<span>问卷评估</span>
+								</li>
+							</a>
+							<a href="18.html">
+								<li>
+									<span>治疗方案</span>
+								</li>
+							</a>
+							<a href="19.html">
+								<li>
+									<span>预后信息</span>
+								</li>
+							</a>
+							<a href="20.html">
+								<li class="on">
+									<span>随访信息</span>
+								</li>
+							</a>
+						</ul>
+					</div>
+					<div class="clearfix">
+						<div class="examination-results-sideMenu bg-white fl">
+							<ul>
+								<li>尿常规</li>
+								<li>血常规</li>
+								<li>血生化</li>
+								<li>冷血球蛋白</li>
+								<li>骨代谢相关检查</li>
+								<li>传染病代谢</li>
+								<li>免疫学检查</li>
+								<li class="on">M蛋白检查</li>
+								<li>心肌标记物</li>
+								<li>骨髓检查</li>
+								<li>基因检查</li>
+								<li>补体检测</li>
+								<li>肿瘤标记物</li>
+							</ul>
+						</div>
+						<div class="er-main fl bg-white">
+							<div class="er-main-box1">
+								<div class="er-main-box1-head clearfix">
+									<ul class="clearfix fl">
+										<li class="current">预后信息</li>
+										<li>
+											<span>编号：</span>2394739275
+										</li>
+										<li>
+											<span>检查时间：</span>2017.07.23-13:45
+										</li>
+									</ul>
+									<div class=" er-menu-i fr cp"></div>
+								</div>
+								<div class="er-main-box1-body bg-white" id="ovo-main-box-body">
+									<table>
+										<tr>
+											<td style="width:15%;">我感觉手部麻木或有针刺感</td>
+											<td style="width:35%;">有一点</td>
+											<td style="width:15%;">我听力有障碍</td>
+											<td style="width:32%;">有一点</td>
+										</tr>
+										<tr>
+											<td style="width:15%;">我感觉手部麻木或有针刺感</td>
+											<td style="width:35%;">有一点</td>
+											<td style="width:15%;">我听力有障碍</td>
+											<td style="width:32%;">有一点</td>
+										</tr>
+										<tr>
+											<td style="width:15%;">我感觉手部麻木或有针刺感</td>
+											<td style="width:35%;">有一点</td>
+											<td style="width:15%;">我听力有障碍</td>
+											<td style="width:32%;">有一点</td>
+										</tr>
+										<tr>
+											<td style="width:15%;height:1.1rem;" valign="top">我感觉手部麻木或有针刺感</td>
+											<td colspan="3" style="width:85%;height:1.1rem;" valign="top">有一点</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer fl">
+			由 创业软件股份有限公司 提供技术支持  All Rights Reserved 浙ICP备 14009699 号-2
+		</div>
+	</div>
+	<script>
+			$(".examination-results-head").on("click","ul li",function(){
+				$(this).addClass("on").siblings("li").removeClass("on");
+			})
+
+			$(".examination-results-sideMenu").on("click","ul li",function(){
+				$(this).addClass("on").siblings("li").removeClass("on");
+			})
+
+			$(".er-main").on("click",".er-menu-i",function(){
+				$(this).toggleClass("on").parent().next().toggle();
+			})
+	</script>
+</body>
+</html>

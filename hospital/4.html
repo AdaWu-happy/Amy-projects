@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>专病登记-统计分析</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery.1.11.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/echarts.min.js"></script>
+</head>
+<body>
+<div id="head" class="clearfix">
+	<div class="head-fl fl">
+		<a href="" class="fl head-logo cp">
+			<img src="img/head/logo.png" alt="">
+		</a>
+		<span class="fl">
+				多学科远程会诊平台
+			</span>
+	</div>
+	<div class="head-fr fr clearfix">
+		<div class="head-user-box fr">
+			<img src="img/head/user.png" alt="">
+			<span>李冠森</span>
+			<img src="img/head/arr-b.png" alt="">
+			<div class="head-user-hide-box bg-white">
+				<div class="huhb-head clearfix">
+					<div class="avatar-box fl">
+						<img src="img/head/5.png" alt="">
+					</div>
+					<div class="fl">
+						<p>李冠森</p>
+						<p>13912345678</p>
+					</div>
+				</div>
+				<div class="huhb-body">
+					<ul>
+						<li>
+							<a href="1-4.html" style="display: block;">
+								<img src="img/head/1.png" alt="">
+								基本资料
+							</a>
+						</li>
+						<li>
+							<a href="1-4.html" style="display: block;">
+								<img src="img/head/2.png" alt="">
+								修改密码
+							</a>
+						</li>
+						<li>
+							<img src="img/head/3.png" alt="">
+							申请权限
+						</li>
+						<li>
+							<img src="img/head/4.png" alt="">
+							退出
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="head-news fr">
+			<img src="img/head/news.png" alt="">
+			<span class="news-num">123</span>
+		</div>
+		<div class="head-set fr">
+			<img src="img/head/set.png" alt="">
+		</div>
+	</div>
+</div>
+	<div id="content" class="clearfix">
+		<div class="content-leftSide fl">
+			<ul>
+				<li class="on"><a href="9.html" style="display: block;height: 100%;"></a></li>
+				<li><a href="3.html" style="display: block;height: 100%;"></a></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="content-main-box fl ovo-main-box">
+			<div class="content-main-head">
+				<ul class="clearfix">
+					<li class="on">
+						统计分析
+					</li>
+				</ul>
+			</div>
+			<div style="height:.45rem;"></div>
+			<div class="content-main-statistics clearfix">
+				<ul class="clearfix">
+					<li>
+						<div class="cms-head"><b>病种分布情况</b></div>
+						<div id="cms-body"></div>
+					</li>
+					<li>
+						<div class="cms-head"><b>来源分布情况</b></div>
+						<div id="cms-body1"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer fl">
+			由 创业软件股份有限公司 提供技术支持  All Rights Reserved 浙ICP备 14009699 号-2
+		</div>
+	</div>
+	<script>
+			var aa=document.getElementsByTagName("body")[0].offsetHeight;
+			var oHeadheight=document.getElementById("head").offsetHeight;
+			var sideHeight=document.getElementsByClassName("content-leftSide")[0];
+			sideHeight.setAttribute("style","height:"+(aa-oHeadheight)+"px");
+
+			$(".content-leftSide").on("click","ul li",function(){
+				$(this).addClass("on").siblings("li").removeClass("on");
+			})
+
+			$(".content-main-head").on("click","ul li",function(){
+				$(this).addClass("on").siblings("li").removeClass("on");
+			})
+
+			var myChart = echarts.init(document.getElementById('cms-body'));
+
+			option = {
+			    series: [
+			        {
+			            name:'病种分析',
+			            type:'pie',
+			            radius: ['40%', '50%'],
+			            avoidLabelOverlap: false,
+			            label: {
+			                normal: {
+			                    show: 1,
+			                    position: 'outside',
+			                },
+			            },
+			            labelLine: {
+			                normal: {
+			                    show: true,
+				                }
+				            },
+			            data:[
+			                {value:335, name:'其他形式的土拉菌病'},
+			                {value:310, name:'巴斯德菌病'},
+			                {value:234, name:'原生动物性痢疾'},
+			                {value:135, name:'施米茨(－施蒂策)痢疾'},
+			                {value:1548, name:'原生动物性结肠炎'}
+			            ]
+			        }
+			    ]
+			};
+			myChart.setOption(option);
+
+			var myChart = echarts.init(document.getElementById('cms-body1'));
+			option = {
+		    calculable : true,
+		    series : [
+		        {
+		            name:'来源分布',
+		            type:'pie',
+		           	radius : ['10%', '50%'],
+		            center : ['50%', '50%'],
+		            roseType : 'area',
+		            data:[
+		                {value:10, name:'医院1'},
+		                {value:5, name:'医院2'},
+		                {value:15, name:'医院3'},
+		                {value:25, name:'医院4'},
+		                {value:20, name:'医院5'},
+		                {value:35, name:'医院6'},
+		                {value:30, name:'医院7'},
+		                {value:40, name:'医院8'}
+		            ]
+		        }
+		    ]
+		};
+		myChart.setOption(option);
+	</script>
+</body>
+</html>

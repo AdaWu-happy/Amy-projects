@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账号设置-基本资料-修改密码</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery.1.11.js"></script>
+	<script src="js/index.js"></script>
+	<style>
+		.footer{
+			width: 100%;
+		}
+		.content-main-editEntry-body{
+			padding-bottom: 1.2rem;
+		}
+		.basic-info form{
+			display: block;
+		}
+		.editEntry-box{
+			padding-bottom: 1.5rem;
+		}
+		.eb-table-info form .input-g .item-title{
+			width: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<div id="head" class="clearfix">
+		<div class="head-fl fl">
+			<a href="" class="fl head-logo cp">
+				<img src="img/head/logo.png" alt="">
+			</a>
+			<span class="fl">
+				多学科远程会诊平台
+			</span>
+		</div>
+		<div class="head-fr fr clearfix">
+			<div class="head-user-box fr">
+				<img src="img/head/user.png" alt="">
+				<span>李冠森</span>
+				<img src="img/head/arr-b.png" alt="">
+				<div class="head-user-hide-box bg-white">
+					<div class="huhb-head clearfix">
+						<div class="avatar-box fl">
+							<img src="img/head/5.png" alt="">
+						</div>
+						<div class="fl">
+							<p>李冠森</p>
+							<p>13912345678</p>
+						</div>
+					</div>
+					<div class="huhb-body">
+						<ul>
+							<li>
+								<a href="1-4.html" style="display: block;">
+									<img src="img/head/1.png" alt="">
+									基本资料
+								</a>
+							</li>
+							<li>
+								<a href="1-4.html" style="display: block;">
+									<img src="img/head/2.png" alt="">
+									修改密码
+								</a>
+							</li>
+							<li>
+								<img src="img/head/3.png" alt="">
+								申请权限
+							</li>
+							<li>
+								<img src="img/head/4.png" alt="">
+								退出
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="head-news fr">
+				<img src="img/head/news.png" alt="">
+				<span class="news-num">123</span>
+			</div>
+			<div class="head-set fr">
+				<img src="img/head/set.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="content" class="clearfix">
+		<div class="content-main-details">
+			<div class="content-main-details-head bg-white">
+				<img src="img/content/home.png" alt="">
+				位置：专病登记>>病例编辑>>添加病例项目
+			</div>
+			<div class="content-main-editEntry-body bg-white">
+				<div style="height:.4rem;"></div>
+				<div class="editEntry-box bg-white">
+					<div class="eb-head">
+						<ul class="clearfix">
+							<a href="1-4.html">
+								<li>基本资料</li>
+							</a>
+							<a href="1-5.html">
+								<li class="on">修改密码</li>
+							</a>
+						</ul>
+					</div>
+					<div class="eb-body" style="padding-top: .9rem;">
+						<div class="eb-table-info basic-info">
+							<form action="">
+								<div class="input-g mt30">
+									<span class="item-title">
+										旧密码
+									</span>
+									<input type="password" class="input-fulid" placeholder="旧密码">
+								</div>
+								<div class="input-g mt30">
+									<span class="item-title">
+										新密码
+									</span>
+									<input type="password" class="input-fulid" placeholder="新密码">
+								</div>
+								<div class="input-g mt30">
+									<span class="item-title">
+										确认新密码
+									</span>
+									<input type="password" class="input-fulid" placeholder="确认新密码">
+								</div>
+							</form>
+						</div>
+						<div class="form-do">
+							<div class="blue-btn">保存</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer fl">
+			由 创业软件股份有限公司 提供技术支持  All Rights Reserved 浙ICP备 14009699 号-2
+		</div>
+	</div>
+	<script>
+			$(".examination-results-head").on("click","ul li",function(){
+				$(this).addClass("on").siblings("li").removeClass("on");
+			})
+
+			$(".examination-results-sideMenu").on("click","ul li",function(){
+				$(this).addClass("on").siblings("li").removeClass("on");
+			})
+
+			$(".er-main").on("click",".er-menu-i",function(){
+				$(this).toggleClass("on").parent().next().toggle();
+			})
+	</script>
+</body>
+</html>

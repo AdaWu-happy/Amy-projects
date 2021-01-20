@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>专病登记-病例详情-问卷评估</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery.1.11.js"></script>
+	<script src="js/index.js"></script>
+	<style>
+		.footer{
+			width: 100%;
+		}
+		#ovo-main-box-body table tr td:nth-child(1),#ovo-main-box-body table tr td:nth-child(3){
+			width: 38%;
+			color: #646f7b;
+			background-color: #f9fafb;
+		}
+		#ovo-main-box-body table tr td:nth-child(2),#ovo-main-box-body table tr td:nth-child(4){
+			width: 12%;
+			color: #4a636d;
+			padding-right: .15rem;
+			box-sizing:border-box;
+		}
+	</style>
+</head>
+<body>
+<div id="head" class="clearfix">
+	<div class="head-fl fl">
+		<a href="" class="fl head-logo cp">
+			<img src="img/head/logo.png" alt="">
+		</a>
+		<span class="fl">
+				多学科远程会诊平台
+			</span>
+	</div>
+	<div class="head-fr fr clearfix">
+		<div class="head-user-box fr">
+			<img src="img/head/user.png" alt="">
+			<span>李冠森</span>
+			<img src="img/head/arr-b.png" alt="">
+			<div class="head-user-hide-box bg-white">
+				<div class="huhb-head clearfix">
+					<div class="avatar-box fl">
+						<img src="img/head/5.png" alt="">
+					</div>
+					<div class="fl">
+						<p>李冠森</p>
+						<p>13912345678</p>
+					</div>
+				</div>
+				<div class="huhb-body">
+					<ul>
+						<li>
+							<a href="1-4.html" style="display: block;">
+								<img src="img/head/1.png" alt="">
+								基本资料
+							</a>
+						</li>
+						<li>
+							<a href="1-4.html" style="display: block;">
+								<img src="img/head/2.png" alt="">
+								修改密码
+							</a>
+						</li>
+						<li>
+							<img src="img/head/3.png" alt="">
+							申请权限
+						</li>
+						<li>
+							<img src="img/head/4.png" alt="">
+							退出
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="head-news fr">
+			<img src="img/head/news.png" alt="">
+			<span class="news-num">123</span>
+		</div>
+		<div class="head-set fr">
+			<img src="img/head/set.png" alt="">
+		</div>
+	</div>
+</div>
+	<div id="content" class="clearfix">
+		<div class="content-main-details">
+			<div class="content-main-details-head">
+				<img src="img/content/home.png" alt="">
+				位置：专病登记>>病例详情
+			</div>
+			<div class="content-main-details-body">
+				<div class="personal-info-box">
+					<p class="name">张峰</p>
+					<div style="height:.3rem;"></div>
+					<table>
+						<tr>
+							<td>
+								<img src="img/content/id.png" alt="">
+								<span>病例ID号：</span>2387429375924
+							</td>
+							<td>
+								<img src="img/content/sex.png" alt="">
+								<span>性别：</span>男
+							</td>
+							<td>
+								<img src="img/content/nation.png" alt="">
+								<span>民族：</span>汉族
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/content/type.png" alt="">
+								<span>病例分类：</span>原生动物性结肠炎
+							</td>
+							<td>
+								<img src="img/content/birth.png" alt="" style="width:.35rem;">
+								<span>出生日期：</span>1978.09.23
+							</td>
+							<td>
+								<img src="img/content/idNum.png" alt="">
+								<span>份证号：</span>23749138572847237
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div style="height:.3rem;"></div>
+				<div class="examination-results-box">
+					<div class="examination-results-head bg-white">
+						<ul>
+							<a href="11.html">
+								<li>
+									<span>人口学特征</span>
+								</li>
+							</a>
+							<a href="12.html">
+								<li>
+									<span>疾病史</span>
+								</li>
+							</a>
+							<a href="13.html">
+								<li>
+									<span>临床诊断</span>
+								</li>
+							</a>
+							<a href="14.html">
+								<li>
+									<span>实验室检查</span>
+								</li>
+							</a>
+							<a href="15.html">
+								<li>
+									<span>影像学检查</span>
+								</li>
+							</a>
+							<a href="21.html">
+								<li>
+									<span>病理检查</span>
+								</li>
+							</a>
+							<a href="16.html">
+								<li>
+									<span>体格检查</span>
+								</li>
+							</a>
+							<a href="17.html">
+								<li class="on">
+									<span>问卷评估</span>
+								</li>
+							</a>
+							<a href="18.html">
+								<li>
+									<span>治疗方案</span>
+								</li>
+							</a>
+							<a href="19.html">
+								<li>
+									<span>预后信息</span>
+								</li>
+							</a>
+							<a href="20.html">
+								<li>
+									<span>随访信息</span>
+								</li>
+							</a>
+						</ul>
+					</div>
+					<div class="clearfix">
+						<div class="examination-results-sideMenu bg-white fl">
+							<ul>
+								<li>尿常规</li>
+								<li>血常规</li>
+								<li>血生化</li>
+								<li>冷血球蛋白</li>
+								<li>骨代谢相关检查</li>
+								<li>传染病代谢</li>
+								<li>免疫学检查</li>
+								<li class="on">M蛋白检查</li>
+								<li>心肌标记物</li>
+								<li>骨髓检查</li>
+								<li>基因检查</li>
+								<li>补体检测</li>
+								<li>肿瘤标记物</li>
+							</ul>
+						</div>
+						<div class="er-main fl bg-white">
+							<div class="er-main-box1">
+								<div class="er-main-box1-head clearfix">
+									<ul class="clearfix fl">
+										<li class="current">生活质量</li>
+										<li>
+											<span>编号：</span>2394739275
+										</li>
+										<li>
+											<span>检查时间：</span>2017.07.23-13:45
+										</li>
+									</ul>
+									<div class=" er-menu-i fr cp"></div>
+								</div>
+								<div class="er-main-box1-body bg-white" id="ovo-main-box-body">
+									<table>
+										<tr>
+											<td>1.您从事一些费力的活动，如携带重的购物袋或手提箱，是否有困难</td>
+											<td>有一点</td>
+											<td>16.您曾便秘吗</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>2.您从事长距离步行，是否有困难 </td>
+											<td>有一点</td>
+											<td>17.您曾腹泻吗</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>3.您在户外从事短距离步行，是否有困难</td>
+											<td>有一点</td>
+											<td>18.您疲倦吗</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>4.您在白天是否需要呆在床上或椅子上</td>
+											<td>有一点</td>
+											<td>19.疼痛干扰您的日常活动吗</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>5.您饮食、穿衣、洗澡或上厕所需要别人帮助吗</td>
+											<td>有一点</td>
+											<td>20.您曾否难以将注意力集中在一些事情上，如看报纸或看电视</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>6.您在从事工作和日常活动上是否受到限制</td>
+											<td>有一点</td>
+											<td>21.您觉得紧张吗</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>7.您在从事嗜好或休闲活动上是否受到限制</td>
+											<td>有一点</td>
+											<td>22.您感到忧虑吗</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>8.您呼吸会喘吗</td>
+											<td>有一点</td>
+											<td>23.您觉得容易生气吗</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>9.您曾感到疼痛吗</td>
+											<td>有一点</td>
+											<td>24.您觉得情绪低落吗</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>10.您需要休息吗</td>
+											<td>有一点</td>
+											<td>25.您曾感到记忆困难吗</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>11.您睡眠曾有困难吗</td>
+											<td>有一点</td>
+											<td>26.您的身体状况或或医疗过程是否曾干扰您的家庭生活</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>12.您曾感到虚弱吗</td>
+											<td>有一点</td>
+											<td>27.您的身体状况或医疗过程是否曾干扰您的社交活动</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>13.您曾缺乏胃口吗</td>
+											<td>有一点</td>
+											<td>28.您的身体状况或医疗过程是否曾造成您财务上的困难</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>14.您曾感到作呕吗</td>
+											<td>有一点</td>
+											<td>29.您如何评定过去七天内您的整体健康</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>15.您曾呕吐吗</td>
+											<td>有一点</td>
+											<td>30.您如何评定过去七天内您整体的生活素质</td>
+											<td>有一点</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="er-main-box1">
+								<div class="er-main-box1-head clearfix">
+									<ul class="clearfix fl">
+										<li class="current">神经毒性反应</li>
+										<li>
+											<span>编号：</span>2394739275
+										</li>
+										<li>
+											<span>检查时间：</span>2017.07.23-13:45
+										</li>
+									</ul>
+									<div class=" er-menu-i fr cp"></div>
+								</div>
+								<div class="er-main-box1-body bg-white" id="ovo-main-box-body">
+									<table>
+										<tr>
+											<td>我感觉手部麻木或有针刺感</td>
+											<td>有一点</td>
+											<td>我听力有障碍</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>我感觉足部麻木或有针刺感</td>
+											<td>有一点</td>
+											<td>我耳鸣或者感觉有嗡嗡声</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>我感觉手部不适</td>
+											<td>有一点</td>
+											<td>我扣纽扣有困难</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>我感觉足部不适</td>
+											<td>有一点</td>
+											<td>当手里有小型物品的时候，我触摸不出它的行状</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>我关节疼痛或者肌痉挛</td>
+											<td>有一点</td>
+											<td>我走路有困难</td>
+											<td>有一点</td>
+										</tr>
+										<tr>
+											<td>我觉得浑身虚弱</td>
+											<td>有一点</td>
+											<td></td>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer fl">
+			由 创业软件股份有限公司 提供技术支持  All Rights Reserved 浙ICP备 14009699 号-2
+		</div>
+	</div>
+	<script>
+			$(".examination-results-head").on("click","ul li",function(){
+				$(this).addClass("on").siblings("li").removeClass("on");
+			})
+
+			$(".examination-results-sideMenu").on("click","ul li",function(){
+				$(this).addClass("on").siblings("li").removeClass("on");
+			})
+
+			$(".er-main").on("click",".er-menu-i",function(){
+				$(this).toggleClass("on").parent().next().toggle();
+			})
+	</script>
+</body>
+</html>
